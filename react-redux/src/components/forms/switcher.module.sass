@@ -1,0 +1,73 @@
+.switchCheckbox
+  height: 0
+  width: 0
+  position: absolute
+  visibility: hidden
+
+.switch
+  cursor: pointer
+  width: 112px
+  height: 20px
+  background: #65666b
+  position: relative
+  transition: background-color 0.2s
+  border-radius: 25px
+
+.switchContainer
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 20px
+  width: 112px
+
+.switch .switchButton
+  position: absolute
+  z-index: 1
+  top: 0
+  left: 0
+  width: 56px
+  height: 20px
+  transition: 0.2s
+  background: #61dafb
+  box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29)
+  border-radius: 25px
+
+.switchCheckbox:checked + .switchButton
+  left: calc(100%)
+  transform: translateX(-100%)
+
+.switchCheckbox:active + .switchButton
+  width: 20px
+
+.switchLabels
+  color: white
+  display: relative
+  z-index: 0
+  height: 100%
+  font: 14px "Segoe UI", Verdana, sans-serif
+
+.switchLabels span
+  position: absolute
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 50%
+  height: 100%
+  user-select: none
+.switchLabels span:first-child
+  left: 0
+.switchLabels span:last-child
+  right: 0
+
+.recieving
+  margin-bottom: 5px
+  display: flex
+  align-content: center
+
+.recievingLabel
+  margin: 0
+  margin-right: 5px
+  color: gray
+
+.expanded
+  font-stretch: ultra-expanded
