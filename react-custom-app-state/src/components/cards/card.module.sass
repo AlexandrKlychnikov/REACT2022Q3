@@ -1,0 +1,34 @@
+.card
+  width: 20%
+  aspect-ratio: 3 / 2
+  border: 1px solid white
+  border-radius: 5px
+  cursor: pointer
+  &Image
+    border-top-left-radius: 5px
+    border-top-right-radius: 5px
+    width: 100%
+    height: 90%
+  .cardInfo
+    height: 10%
+    margin: 0
+    padding: 0 5px
+    display: flex
+    justify-content: space-between
+
+.moreInfo
+  font-size: 1.15em
+  &:hover
+    color: #61dafb
+
+@media screen and (max-width: 1080px)
+  .card
+    width: 30%
+
+@media screen and (max-width: 720px)
+  .card
+    width: 45%
+
+@media screen and (max-width: 420px)
+  .card
+    width: 90%

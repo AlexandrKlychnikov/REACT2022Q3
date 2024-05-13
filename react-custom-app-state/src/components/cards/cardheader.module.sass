@@ -1,0 +1,46 @@
+.header
+  display: flex
+  justify-content: space-between
+  padding: 10px
+
+.icon
+  width: 30px
+  height: auto
+  cursor: pointer
+  &:hover
+    color: #61dafb
+
+.volumeBox
+  position: relative
+  width: 30px
+  height: 30px
+  & .icon
+    width: 30px
+    display: inline-block
+    position: absolute
+    top: 0
+    left: 0
+
+.medium, .high
+  visibility: hidden
+
+.flip
+  height: 30px
+  margin-bottom: 4px
+  color: #61dafb
+  animation-name: flip-animate
+  animation-duration: 0.5s
+  animation-iteration-count: infinite
+  animation-timing-function: linear
+
+@keyframes flip-animate
+  0%
+    transform: rotate(0deg)
+  25%
+    transform: rotate(-90deg)
+  50%
+    transform: rotate(-180deg)
+  75%
+    transform: rotate(-90deg)
+  100%
+    transform: rotate(0deg)
